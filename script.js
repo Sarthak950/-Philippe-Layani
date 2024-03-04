@@ -1220,13 +1220,13 @@ const handleResize = () => {
 const winCount = 3;
 const cubeAnimationTimeline = gsap.timeline({
   scrollTrigger: {
-    trigger: "#dummy",
-
+    trigger: ".page4",
+    scroller: "body",
     start: "top 0%",
-    end: `top -800%`,
+    end: `top -600%`,
     scrub: true,
     pin: true,
-    markers: true,
+    // markers: true,
     // anticipatePin: 1,
   },
 });
