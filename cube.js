@@ -75,8 +75,9 @@ const winCount = 3;
 const cubeAnimationTimeline = gsap.timeline({
     scrollTrigger: {
         trigger: "#dummy",
+
         start: "top 0%",
-        end: `top -100%`,
+        end: `top -800%`,
         scrub: true,
         pin: true,
         markers: true,
@@ -85,13 +86,45 @@ const cubeAnimationTimeline = gsap.timeline({
 });
 
 cubeAnimationTimeline
-    .to(
-        cube.position,
+    .fromTo(
+        cube.scale,
         {
-            x: -10,
-            duration: 1,
+            x: 0,
+            y: 0,
+            z: 0,
         },
-    );
+        {
+            x: 1,
+            y: 1,
+            z: 1,
+            duration: 5,
+        },
+    )
+    .to(
+        cube.rotation,
+        {
+            y: Math.PI * 2,
+            duration: 15,
+        },
+    )
+    .to (
+        cube.rotation,
+        {
+            x: -Math.PI /2 ,
+            duration: 15,
+        }
+    )
+    .to (
+        cube.scale,
+        {
+            x: 3,
+            y: 3,
+            z: 3,
+            duration: 25,
+        }
+    )
+
+
 
 // Corrected event listener for window resize
 window.addEventListener("resize", handleResize);
