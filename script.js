@@ -666,10 +666,10 @@ function page5Animation() {
     scrollTrigger: {
       scroller: "body",
       trigger: ".page5",
-      start: "top 30%",
-      end: "top 0%",
+      start: "top -430%",
+      end: "top -470%",
       scrub: 1,
-      // markers: true,
+      markers: true,
     },
   });
 
@@ -684,8 +684,8 @@ function page5Animation() {
     scrollTrigger: {
       scroller: "body",
       trigger: ".page5-title-box",
-      start: "top 20%",
-      end: "top 0%",
+      start: "top -420%",
+      end: "top -440%",
       scrub: 1,
       // markers: true,
     },
@@ -757,8 +757,8 @@ function page6Animation() {
     scrollTrigger: {
       scroller: "body",
       trigger: ".page6-title-box",
-      start: "top 50%",
-      end: "top 30%",
+      start: "top -450%",
+      end: "top -480%",
       scrub: 1,
       // markers: true,
     },
@@ -769,8 +769,8 @@ function page6Animation() {
     scrollTrigger: {
       scroller: "body",
       trigger: ".page6",
-      start: "top 60%",
-      end: "top -100%",
+      start: "top -460%",
+      end: "top -560%",
       // markers: true,
       scrub: 1,
     },
@@ -781,8 +781,8 @@ function page6Animation() {
     scrollTrigger: {
       scroller: "body",
       trigger: ".page6",
-      start: "top 60%",
-      end: "top -100%",
+      start: "top -460%",
+      end: "top -560%",
       // markers: true,
       scrub: 1,
     },
@@ -800,8 +800,8 @@ function page7Animation() {
     scrollTrigger: {
       scroller: "body",
       trigger: ".page7-title-box",
-      start: "top 50%",
-      end: "top 30%",
+      start: "top -450%",
+      end: "top -470%",
       scrub: 1,
       // markers: true,
     },
@@ -816,8 +816,8 @@ function page7Animation() {
     scrollTrigger: {
       scroller: "body",
       trigger: ".page7>p:nth-child(2)",
-      start: "top 70%",
-      end: "top 40%",
+      start: "top -470%",
+      end: "top -500%",
       scrub: 1,
       // markers: true,
     },
@@ -829,8 +829,8 @@ function page7Animation() {
     scrollTrigger: {
       scroller: "body",
       trigger: ".page7>p:nth-child(3)",
-      start: "top 80%",
-      end: "top 40%",
+      start: "top -480%",
+      end: "top -520%",
       scrub: 1,
       // markers: true,
     },
@@ -848,7 +848,7 @@ function page8Animation() {
     scrollTrigger: {
       scroller: "body",
       trigger: ".page8-title-box",
-      start: "top 50%",
+      start: "top -450%",
       end: "top 30%",
       scrub: 1,
       // markers: true,
@@ -860,7 +860,7 @@ function page8Animation() {
     scrollTrigger: {
       scroller: "body",
       trigger: ".page8-elem",
-      start: "top 70%",
+      start: "top -470%",
       end: "top 40%",
       scrub: 1,
       // markers: true,
@@ -1223,7 +1223,7 @@ const cubeAnimationTimeline = gsap.timeline({
     trigger: ".page4",
     scroller: "body",
     start: "top 0%",
-    end: `top -600%`,
+    end: `top -500%`,
     scrub: true,
     pin: true,
     // markers: true,
